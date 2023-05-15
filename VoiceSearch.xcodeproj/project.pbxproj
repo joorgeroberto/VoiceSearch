@@ -16,6 +16,7 @@
 		931AB3532A12AAFC009F7A2D /* VoiceSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AB3522A12AAFC009F7A2D /* VoiceSearchUITestsLaunchTests.swift */; };
 		93B7A75E2A12B23100B4DA38 /* VehicleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B7A75D2A12B23100B4DA38 /* VehicleListViewController.swift */; };
 		93B7A7602A12B24B00B4DA38 /* VehicleListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B7A75F2A12B24B00B4DA38 /* VehicleListViewController.storyboard */; };
+		93E73D852A12BC6D00BD633C /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E73D842A12BC6D00BD633C /* VehicleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		931AB3522A12AAFC009F7A2D /* VoiceSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		93B7A75D2A12B23100B4DA38 /* VehicleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewController.swift; sourceTree = "<group>"; };
 		93B7A75F2A12B24B00B4DA38 /* VehicleListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VehicleListViewController.storyboard; sourceTree = "<group>"; };
+		93E73D842A12BC6D00BD633C /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +133,8 @@
 		931AB35F2A12AB65009F7A2D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				93B7A75D2A12B23100B4DA38 /* VehicleListViewController.swift */,
-				93B7A75F2A12B24B00B4DA38 /* VehicleListViewController.storyboard */,
+				93E73D832A12BC5800BD633C /* CustomCell */,
+				93E73D822A12BC4700BD633C /* VehicleList */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -149,6 +151,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		93E73D822A12BC4700BD633C /* VehicleList */ = {
+			isa = PBXGroup;
+			children = (
+				93B7A75F2A12B24B00B4DA38 /* VehicleListViewController.storyboard */,
+				93B7A75D2A12B23100B4DA38 /* VehicleListViewController.swift */,
+			);
+			path = VehicleList;
+			sourceTree = "<group>";
+		};
+		93E73D832A12BC5800BD633C /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				93E73D842A12BC6D00BD633C /* VehicleCell.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E73D852A12BC6D00BD633C /* VehicleCell.swift in Sources */,
 				93B7A75E2A12B23100B4DA38 /* VehicleListViewController.swift in Sources */,
 				931AB3302A12AAFB009F7A2D /* AppDelegate.swift in Sources */,
 				931AB3322A12AAFB009F7A2D /* SceneDelegate.swift in Sources */,
