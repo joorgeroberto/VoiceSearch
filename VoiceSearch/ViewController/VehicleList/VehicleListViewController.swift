@@ -12,6 +12,7 @@ class VehicleListViewController: UIViewController {
     
     @IBOutlet private var searchBar: UISearchBar!
     @IBOutlet private var tableView: UITableView!
+    private var viewModel = VehicleListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,29 +20,33 @@ class VehicleListViewController: UIViewController {
         self.searchBar.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
+
+        self.viewModel.fetchVehicleList()
     }
 }
 
 extension VehicleListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
+        self.viewModel.filterData(searchText: searchText)
+        self.tableView.reloadData()
     }
 }
 
 extension VehicleListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Mustang")
+        print(self.viewModel.getVehicleAtIndex(index: indexPath.row))
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        return viewModel.getNumberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VehicleCell", for: indexPath) as! VehicleCell
-//        let weatherViewModel = weatherListViewModel.modelAt(indexPath.row)
-        cell.configure(vehicleName: "Mustang")
+        let vehicleName = self.viewModel.getVehicleAtIndex(index: indexPath.row)
+        cell.configure(vehicleName: vehicleName)
 
         return cell
     }
