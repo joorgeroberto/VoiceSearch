@@ -7,22 +7,38 @@
 
 import Foundation
 
+protocol VehicleListViewModelDelegate {
+    func onSuccess()
+    func onError(error: String)
+}
+
 class VehicleListViewModel {
     
-    private var vehicleList: [String] = []
-    private var filteredVehicleList: [String] = []
+    private var vehicleList: [Vehicle] = []
+    private var filteredVehicleList: [Vehicle] = []
+    var delegate: VehicleListViewModelDelegate?
     
     func getNumberOfRows() -> Int {
         return filteredVehicleList.count
     }
     
-    func getVehicleAtIndex(index: Int) -> String {
+    func getVehicleAt(index: Int) -> Vehicle {
         return filteredVehicleList[index]
     }
 
     func fetchVehicleList() {
-        self.vehicleList = ["Aspire 1.3", "Belina L 1.8/ 1.6", "Corcel II L", "Del Rey L 1.8 / 1.6 2p e 4p", "Mustang GT V8"]
-        self.filterData(searchText: "")
+        let url = URL(string: "https://parallelum.com.br/fipe/api/v1/carros/marcas/22/modelos")!
+        WebService().getVehicles(url: url) { vehicles in
+            if let vehicles = vehicles {
+                self.vehicleList = vehicles
+                self.filterData(searchText: "")
+                DispatchQueue.main.async {
+                    self.delegate?.onSuccess()
+                }
+            } else {
+                self.delegate?.onError(error: "Connection error! Please, try again!")
+            }
+        }
     }
 
     func filterData(searchText: String) {
@@ -32,8 +48,7 @@ class VehicleListViewModel {
                 return true
             }
 
-//            let nameExists = element.name.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
-            let nameExists = element.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+            let nameExists = element.name.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
 
             return nameExists
         }

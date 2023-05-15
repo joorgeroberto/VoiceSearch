@@ -19,6 +19,7 @@ class VehicleListViewController: UIViewController {
 
         self.searchBar.delegate = self
         self.tableView.delegate = self
+        self.viewModel.delegate = self
         self.tableView.dataSource = self
 
         self.viewModel.fetchVehicleList()
@@ -35,7 +36,7 @@ extension VehicleListViewController: UISearchBarDelegate {
 
 extension VehicleListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(self.viewModel.getVehicleAtIndex(index: indexPath.row))
+        print(self.viewModel.getVehicleAt(index: indexPath.row))
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
@@ -45,13 +46,23 @@ extension VehicleListViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VehicleCell", for: indexPath) as! VehicleCell
-        let vehicleName = self.viewModel.getVehicleAtIndex(index: indexPath.row)
-        cell.configure(vehicleName: vehicleName)
+        let vehicle = self.viewModel.getVehicleAt(index: indexPath.row)
+        cell.configure(vehicle: vehicle)
 
         return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         1
+    }
+}
+
+extension VehicleListViewController: VehicleListViewModelDelegate {
+    func onSuccess() {
+        self.tableView.reloadData()
+    }
+    
+    func onError(error: String) {
+        print(error)
     }
 }

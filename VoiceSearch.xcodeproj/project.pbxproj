@@ -18,6 +18,8 @@
 		93B7A7602A12B24B00B4DA38 /* VehicleListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B7A75F2A12B24B00B4DA38 /* VehicleListViewController.storyboard */; };
 		93E73D852A12BC6D00BD633C /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E73D842A12BC6D00BD633C /* VehicleCell.swift */; };
 		93E73D872A12C47800BD633C /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E73D862A12C47800BD633C /* VehicleListViewModel.swift */; };
+		93E73D892A12CD5A00BD633C /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E73D882A12CD5A00BD633C /* Vehicle.swift */; };
+		93E73D8C2A12CF2E00BD633C /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E73D8B2A12CF2E00BD633C /* WebServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		93B7A75F2A12B24B00B4DA38 /* VehicleListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VehicleListViewController.storyboard; sourceTree = "<group>"; };
 		93E73D842A12BC6D00BD633C /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 		93E73D862A12C47800BD633C /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
+		93E73D882A12CD5A00BD633C /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		93E73D8B2A12CF2E00BD633C /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		931AB32E2A12AAFB009F7A2D /* VoiceSearch */ = {
 			isa = PBXGroup;
 			children = (
+				93E73D8A2A12CF2500BD633C /* Services */,
 				931AB3612A12AB7B009F7A2D /* Model */,
 				931AB3602A12AB70009F7A2D /* ViewModel */,
 				931AB35F2A12AB65009F7A2D /* ViewController */,
@@ -152,6 +157,7 @@
 		931AB3612A12AB7B009F7A2D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				93E73D882A12CD5A00BD633C /* Vehicle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +177,14 @@
 				93E73D842A12BC6D00BD633C /* VehicleCell.swift */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		93E73D8A2A12CF2500BD633C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				93E73D8B2A12CF2E00BD633C /* WebServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E73D892A12CD5A00BD633C /* Vehicle.swift in Sources */,
 				93E73D852A12BC6D00BD633C /* VehicleCell.swift in Sources */,
+				93E73D8C2A12CF2E00BD633C /* WebServices.swift in Sources */,
 				93E73D872A12C47800BD633C /* VehicleListViewModel.swift in Sources */,
 				93B7A75E2A12B23100B4DA38 /* VehicleListViewController.swift in Sources */,
 				931AB3302A12AAFB009F7A2D /* AppDelegate.swift in Sources */,
