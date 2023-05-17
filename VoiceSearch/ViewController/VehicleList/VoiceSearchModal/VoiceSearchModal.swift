@@ -8,9 +8,15 @@
 import UIKit
 import Foundation
 
+protocol VoiceSearchModalDelegate {
+    func onStopRecord()
+}
+
 class VoiceSearchModal: UIView {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var voiceInputLabel: UILabel!
+    var delegate: VoiceSearchModalDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,6 +40,17 @@ class VoiceSearchModal: UIView {
     private func configureView() {
         self.stopButton.layer.cornerRadius = 50
         self.stopButton.layer.masksToBounds = true
+
+        self.voiceInputLabel.textColor = UIColor(white: 100, alpha: 0.5)
+    }
+
+    func changeVoiceInput(voiceInput: String) {
+        self.voiceInputLabel.text = voiceInput
+        self.voiceInputLabel.textColor = UIColor(white: 255, alpha: 1.0)
+    }
+
+    @IBAction private func StopRecordButtonPressed(_ sender: UIButton) {
+        self.delegate?.onStopRecord()
     }
     
 }
