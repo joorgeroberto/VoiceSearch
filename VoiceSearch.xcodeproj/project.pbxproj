@@ -14,6 +14,8 @@
 		931AB3472A12AAFC009F7A2D /* VoiceSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AB3462A12AAFC009F7A2D /* VoiceSearchTests.swift */; };
 		931AB3512A12AAFC009F7A2D /* VoiceSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AB3502A12AAFC009F7A2D /* VoiceSearchUITests.swift */; };
 		931AB3532A12AAFC009F7A2D /* VoiceSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AB3522A12AAFC009F7A2D /* VoiceSearchUITestsLaunchTests.swift */; };
+		93A916932A1428AB00F7831A /* VoiceSearchModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A916922A1428AB00F7831A /* VoiceSearchModal.swift */; };
+		93A916952A14294E00F7831A /* VoiceSearchModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A916942A14294E00F7831A /* VoiceSearchModal.xib */; };
 		93B7A75E2A12B23100B4DA38 /* VehicleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B7A75D2A12B23100B4DA38 /* VehicleListViewController.swift */; };
 		93B7A7602A12B24B00B4DA38 /* VehicleListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B7A75F2A12B24B00B4DA38 /* VehicleListViewController.storyboard */; };
 		93E73D852A12BC6D00BD633C /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E73D842A12BC6D00BD633C /* VehicleCell.swift */; };
@@ -51,6 +53,8 @@
 		931AB34C2A12AAFC009F7A2D /* VoiceSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		931AB3502A12AAFC009F7A2D /* VoiceSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSearchUITests.swift; sourceTree = "<group>"; };
 		931AB3522A12AAFC009F7A2D /* VoiceSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93A916922A1428AB00F7831A /* VoiceSearchModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSearchModal.swift; sourceTree = "<group>"; };
+		93A916942A14294E00F7831A /* VoiceSearchModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoiceSearchModal.xib; sourceTree = "<group>"; };
 		93B7A75D2A12B23100B4DA38 /* VehicleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewController.swift; sourceTree = "<group>"; };
 		93B7A75F2A12B24B00B4DA38 /* VehicleListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VehicleListViewController.storyboard; sourceTree = "<group>"; };
 		93E73D842A12BC6D00BD633C /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
@@ -162,9 +166,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		93A9168F2A14285400F7831A /* VoiceSearchModal */ = {
+			isa = PBXGroup;
+			children = (
+				93A916922A1428AB00F7831A /* VoiceSearchModal.swift */,
+				93A916942A14294E00F7831A /* VoiceSearchModal.xib */,
+			);
+			path = VoiceSearchModal;
+			sourceTree = "<group>";
+		};
 		93E73D822A12BC4700BD633C /* VehicleList */ = {
 			isa = PBXGroup;
 			children = (
+				93A9168F2A14285400F7831A /* VoiceSearchModal */,
 				93B7A75F2A12B24B00B4DA38 /* VehicleListViewController.storyboard */,
 				93B7A75D2A12B23100B4DA38 /* VehicleListViewController.swift */,
 			);
@@ -293,6 +307,7 @@
 			files = (
 				931AB33C2A12AAFC009F7A2D /* LaunchScreen.storyboard in Resources */,
 				93B7A7602A12B24B00B4DA38 /* VehicleListViewController.storyboard in Resources */,
+				93A916952A14294E00F7831A /* VoiceSearchModal.xib in Resources */,
 				931AB3392A12AAFC009F7A2D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +335,7 @@
 			files = (
 				93E73D892A12CD5A00BD633C /* Vehicle.swift in Sources */,
 				93E73D852A12BC6D00BD633C /* VehicleCell.swift in Sources */,
+				93A916932A1428AB00F7831A /* VoiceSearchModal.swift in Sources */,
 				93E73D8C2A12CF2E00BD633C /* WebServices.swift in Sources */,
 				93E73D872A12C47800BD633C /* VehicleListViewModel.swift in Sources */,
 				93B7A75E2A12B23100B4DA38 /* VehicleListViewController.swift in Sources */,
@@ -491,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U2BKJ22455;
@@ -508,6 +525,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joorgeroberto.VoiceSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,6 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U2BKJ22455;
@@ -536,6 +555,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joorgeroberto.VoiceSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

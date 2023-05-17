@@ -12,6 +12,7 @@ class VehicleListViewController: UIViewController {
     
     @IBOutlet private var searchBar: UISearchBar!
     @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var voiceSearchModal: VoiceSearchModal!
     private var viewModel = VehicleListViewModel()
 
     override func viewDidLoad() {
@@ -22,7 +23,23 @@ class VehicleListViewController: UIViewController {
         self.viewModel.delegate = self
         self.tableView.dataSource = self
 
+        self.configureSearchBar()
+
+//        self.viewModel.requestTranscribePermissions()
+        
         self.viewModel.fetchVehicleList()
+    }
+    
+    func configureSearchBar() {
+        let micImage = UIImage(systemName: "mic.fill")
+        searchBar.setImage(micImage, for: .bookmark, state: .normal)
+        searchBar.showsBookmarkButton = true
+    }
+
+    func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
+        // Do work here
+        print("botão clicadooooo")
+        self.voiceSearchModal.isHidden = false
     }
 }
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Speech
 
 protocol VehicleListViewModelDelegate {
     func onSuccess()
@@ -51,6 +52,39 @@ class VehicleListViewModel {
             let nameExists = element.name.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
 
             return nameExists
+        }
+    }
+
+    func requestTranscribePermissions() {
+        SFSpeechRecognizer.requestAuthorization { [unowned self] authStatus in
+            DispatchQueue.main.async {
+                if authStatus == .authorized {
+                    print("Good to go!")
+                } else {
+                    print("Transcription permission was declined.")
+                }
+            }
+        }
+    }
+
+    func transcribeAudio(url: URL) {
+        // create a new recognizer and point it at our audio
+        let recognizer = SFSpeechRecognizer()
+        let request = SFSpeechURLRecognitionRequest(url: url)
+
+        // start recognition!
+        recognizer?.recognitionTask(with: request) { [unowned self] (result, error) in
+            // abort if we didn't get any transcription back
+            guard let result = result else {
+                print("There was an error: \(error!)")
+                return
+            }
+
+            // if we got the final transcription back, print it
+            if result.isFinal {
+                // pull out the best transcription...
+                print(result.bestTranscription.formattedString)
+            }
         }
     }
 }
