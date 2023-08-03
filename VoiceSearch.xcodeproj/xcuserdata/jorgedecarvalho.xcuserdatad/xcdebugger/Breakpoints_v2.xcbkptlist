@@ -3,4 +3,227 @@
    uuid = "0FDAF5A6-D137-4559-9A87-E0FB33ED3C51"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CAAC6473-6FFB-4F22-AAC9-679EB9680109"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceSearch/ViewController/CustomCell/VehicleCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "configure(vehicle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2B22F40-800D-4560-9480-ABE9F6FE6C17"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceSearch/ViewModel/VehicleListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "startRecording()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2B22F40-800D-4560-9480-ABE9F6FE6C17 - 1eb397f63852fad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.SFSpeechRecognitionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VoiceSearch.VehicleListViewModel.startRecording() -&gt; ()"
+                  moduleName = "VoiceSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgedecarvalho/Documents/PersonalProjects/IOSProjects/VoiceSearch/VoiceSearch/ViewModel/VehicleListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "A2B22F40-800D-4560-9480-ABE9F6FE6C17 - 1eb397f63852fad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.SFSpeechRecognitionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VoiceSearch.VehicleListViewModel.startRecording() -&gt; ()"
+                  moduleName = "VoiceSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgedecarvalho/Documents/PersonalProjects/IOSProjects/VoiceSearch/VoiceSearch/ViewModel/VehicleListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "648">
+               </Location>
+               <Location
+                  uuid = "A2B22F40-800D-4560-9480-ABE9F6FE6C17 - 1eb397f63852fce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.SFSpeechRecognitionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VoiceSearch.VehicleListViewModel.startRecording() -&gt; ()"
+                  moduleName = "VoiceSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgedecarvalho/Documents/PersonalProjects/IOSProjects/VoiceSearch/VoiceSearch/ViewModel/VehicleListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "A2B22F40-800D-4560-9480-ABE9F6FE6C17 - 1eb397f63852fce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.SFSpeechRecognitionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VoiceSearch.VehicleListViewModel.startRecording() -&gt; ()"
+                  moduleName = "VoiceSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgedecarvalho/Documents/PersonalProjects/IOSProjects/VoiceSearch/VoiceSearch/ViewModel/VehicleListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "648">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B986C6D-E04E-44EE-8E50-6D96F73A9C9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceSearch/ViewModel/VehicleListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "startRecording()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8B986C6D-E04E-44EE-8E50-6D96F73A9C9F - bd226a3c0a21b9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceSearch.VehicleListViewModel.startRecording() -&gt; ()"
+                  moduleName = "VoiceSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgedecarvalho/Documents/PersonalProjects/IOSProjects/VoiceSearch/VoiceSearch/ViewModel/VehicleListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "1604">
+               </Location>
+               <Location
+                  uuid = "8B986C6D-E04E-44EE-8E50-6D96F73A9C9F - 1eb397f63852bee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.SFSpeechRecognitionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VoiceSearch.VehicleListViewModel.startRecording() -&gt; ()"
+                  moduleName = "VoiceSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgedecarvalho/Documents/PersonalProjects/IOSProjects/VoiceSearch/VoiceSearch/ViewModel/VehicleListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "8B986C6D-E04E-44EE-8E50-6D96F73A9C9F - 1eb397f63852fad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.SFSpeechRecognitionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VoiceSearch.VehicleListViewModel.startRecording() -&gt; ()"
+                  moduleName = "VoiceSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgedecarvalho/Documents/PersonalProjects/IOSProjects/VoiceSearch/VoiceSearch/ViewModel/VehicleListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA55BD40-0E4B-4013-945C-5BC09469D63C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceSearch/ViewController/VehicleList/VehicleListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "configureSearchBar()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DA55BD40-0E4B-4013-945C-5BC09469D63C - 1cfc3104e90a75ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceSearch.VehicleListViewController.configureSearchBar() -&gt; ()"
+                  moduleName = "VoiceSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgedecarvalho/Documents/PersonalProjects/IOSProjects/VoiceSearch/VoiceSearch/ViewController/VehicleList/VehicleListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "DA55BD40-0E4B-4013-945C-5BC09469D63C - 1cfc3104e90a75ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceSearch.VehicleListViewController.configureSearchBar() -&gt; ()"
+                  moduleName = "VoiceSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgedecarvalho/Documents/PersonalProjects/IOSProjects/VoiceSearch/VoiceSearch/ViewController/VehicleList/VehicleListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5632D9A-24EE-4BFC-A002-8BE503322D40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceSearch/ViewModel/VehicleListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "btnStartSpeechToText()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

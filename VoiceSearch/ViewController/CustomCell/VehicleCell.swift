@@ -11,7 +11,7 @@ import Foundation
 class VehicleCell: UITableViewCell {
     @IBOutlet weak var vehicleNameLabel: UILabel!
 
-    func configure(vehicleName: String) {
-        self.vehicleNameLabel.text = vehicleName
+    func configure(vehicle: Vehicle) {
+        self.vehicleNameLabel.text = vehicle.name
     }
 }

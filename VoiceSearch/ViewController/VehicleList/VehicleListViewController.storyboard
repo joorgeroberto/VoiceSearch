@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,6 +50,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUO-g8-LIB" customClass="VoiceSearchModal" customModule="VoiceSearch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -57,7 +62,11 @@
                             <constraint firstItem="rxU-Hg-sHs" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="731-Og-zQw"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h6u-em-LLV" secondAttribute="trailing" id="GWp-1q-ph9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="h6u-em-LLV" secondAttribute="bottom" id="UeA-Tc-TPK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="CUO-g8-LIB" secondAttribute="bottom" id="WFY-E4-M2a"/>
+                            <constraint firstItem="CUO-g8-LIB" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" id="YJC-jc-VCR"/>
                             <constraint firstItem="h6u-em-LLV" firstAttribute="top" secondItem="rxU-Hg-sHs" secondAttribute="bottom" id="bRF-oN-DTr"/>
+                            <constraint firstItem="CUO-g8-LIB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fyu-QO-OB9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CUO-g8-LIB" secondAttribute="trailing" id="r1h-aH-yw1"/>
                             <constraint firstItem="rxU-Hg-sHs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sLx-qL-S3X"/>
                             <constraint firstItem="h6u-em-LLV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zni-kw-35b"/>
                         </constraints>
@@ -65,6 +74,7 @@
                     <connections>
                         <outlet property="searchBar" destination="rxU-Hg-sHs" id="pJB-cq-FnZ"/>
                         <outlet property="tableView" destination="h6u-em-LLV" id="epm-Wp-A2z"/>
+                        <outlet property="voiceSearchModal" destination="CUO-g8-LIB" id="LIe-Sk-YIy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
